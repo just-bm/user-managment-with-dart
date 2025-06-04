@@ -1,16 +1,28 @@
-# new_spring
+# User Management System with Flutter and PostgREST
 
-A new Flutter project.
+A complete solution for user authentication and profile management using Flutter for the frontend and PostgREST as the backend API layer for PostgreSQL.
 
-## Getting Started
+## Project Architecture
+┌─────────────────┐ ┌───────────────┐ ┌──────────────┐
+│ Flutter App │──────▶│ PostgREST API │──────▶│ PostgreSQL │
+└─────────────────┘ HTTP └───────────────┘ └──────────────┘
+### Flutter App: Handles the user interface and user interaction. It communicates with the PostgREST API for data operations.
 
-This project is a starting point for a Flutter application.
+### PostgREST API: Provides a RESTful API directly on top of the PostgreSQL database. It handles requests from the Flutter app, executes database operations, and returns responses.
 
-A few resources to get you started if this is your first Flutter project:
+### PostgreSQL: The relational database storing user information, profiles, and other relevant data.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ Features
+  View User Profile
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  Edit/Update User Profile
+
+  Delete User Profile
+
+## 🛠️ Tech Stack
+  Frontend: Flutter (Cross-platform UI toolkit)
+
+  Backend API: PostgREST (Serves a RESTful API from any PostgreSQL database)
+
+  Database: PostgreSQL (Powerful, open-source object-relational database system)
+
